@@ -4,4 +4,4 @@ Este repositorio contiene todo el material del curso durante el semestre 2020-2.
 
 Los invitamos a seguirnos en GitHub para seguir produciendo material.
 
-## Autores: Fabrizio Franco, Carlos Reátegui
+### Autores: Fabrizio Franco, Carlos Reátegui
