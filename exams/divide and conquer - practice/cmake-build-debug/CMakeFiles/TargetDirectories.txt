@@ -1,7 +1,0 @@
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/p5.dir
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/p1.dir
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/p2.dir
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/p3.dir
-/home/fabrizio/Documents/divide-and-conquer-practice-fabriziofranco/cmake-build-debug/CMakeFiles/p4.dir

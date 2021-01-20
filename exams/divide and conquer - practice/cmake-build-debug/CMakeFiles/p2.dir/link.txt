@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/p2.dir/answers/problem2/problem2.cpp.o  -o p2 
