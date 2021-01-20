@@ -1,0 +1,49 @@
+\documentclass[a4paper, 12pt, english]{article}
+% \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{layout}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{etoolbox}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage[bottom]{footmisc}
+\usepackage[includeheadfoot, left=3cm, right=3cm, top = 1.5 cm]{geometry}
+\usepackage[cache=false]{minted}
+\usemintedstyle{xcode}
+
+\graphicspath{ {./answers/} }
+
+\pagestyle{fancy}
+\fancyhf{} 
+\rhead{
+    {\Large \textbf{Analysis and Design of Algorithms}}\\
+    \textbf{CS2102} \\ 
+    \textbf{Analysis of Algorithms} \\ 
+    \textbf{2020-II}
+}
+\lhead{\includegraphics[width=4.6cm, keepaspectratio]{logo/utec}}
+\rfoot{\textbf{\thepage}\hspace{1pt} of \textbf{\pageref{LastPage}}}
+\cfoot{}
+
+\setlength{\parindent}{0em}
+\setlength{\headheight}{80pt}
+
+\newcounter{problem}
+\newenvironment{problem}[3][]{\refstepcounter{problem}\par\medskip 
+
+\textbf{Problem~\theproblem  ~~(#2) - 
+\ifboolexpr{
+  test {\ifdimless{1 pt}{#3 pt}}
+}
+{#3 points} % true
+{#3 point} % false
+} \newline\newline } {\medskip} 
+
+\renewcommand{\thesection}{\Alph{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+

@@ -1,0 +1,124 @@
+\include{document}
+
+\begin{document}
+
+\textbf{Submission deadline}: 03 Dic, 20:10\\ 
+
+\begin{itemize}
+    \item Write your solution (images) and inside the \emph{answers} folder in order to generate a single PDF file. Replace the image files that are already included in the project. Do not change the file name.
+    \item Read the questions carefully and write your answers clearly. Answers that are not legible and that doesn't follow the format will not have any score. 
+\end{itemize}
+
+\underline{Outcomes}:
+
+\begin{enumerate}[label=\alph*.]
+    \item Apply appropriate mathematical and related knowledge to computer science.
+    \item Analyze problems and identify the appropriate computational requirements for its solution.
+\end{enumerate}
+\noindent\rule{\textwidth}{0.01pt}
+\vspace{3mm}
+
+\section{Simplex Method - Maximization Problem}
+
+Use the Simplex Method to find the optimum value in the following problems.
+
+\begin{multicols}{2}[\columnsep1em] 
+
+    \textbf{Simplex Method (standard form)}
+    \begin{enumerate}
+        \item Transform inequalities into equations by adding \textbf{slack} variables
+        \item Construct augmented matrix
+        \item Select the most negative entry in the last row and use it to choose a pivot:
+            \begin{itemize}
+                \item The column is guided by the most negative entry, without considering the values column
+                \item The row is guided by the least non-negative ratio.
+            \end{itemize}
+        \item Use Gauss-Jordan elimination using the selected pivot
+        \item If all entries in the last row are positive or zero, stop. Otherwise, iterate again.
+    \end{enumerate}
+
+    \columnbreak
+
+    \begin{problem}{Outcome a}{4}
+        Maximize $z = 2x_1 - x_2 + 2x_3$ \newline\newline
+        Subject to constraints:
+        \begin{itemize}
+            \item $2x_1 + x_2 \leq 10$
+            \item $x_1 + 2x_2 - 2x_3 \leq 20$
+            \item $x_2 + 2x_3 \leq 5$
+        \end{itemize}
+        Where $x_1 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$
+    \end{problem}
+\end{multicols}
+
+\begin{center}
+    \includegraphics[width=0.9\linewidth]{problem1/problem1}%
+\end{center}
+
+\section{Simplex Method - Minimization Problem}
+
+\begin{problem}{Outcome a}{5}
+    Find the minimum value of the function: $w = 3x_1 + 2x_2$ \newline\newline
+    Subject to constraints:
+    \begin{itemize}
+        \item $2x_1 + x_2 \geq 6$
+        \item $x_1 + x_2 \geq 4$
+    \end{itemize}
+    Where $x_1 \geq 0$, $x_2 \geq 0$
+
+
+    \begin{center}
+        \includegraphics[width=0.9\linewidth]{problem2/problem2}%
+    \end{center}
+
+\end{problem}
+
+
+\section{Simplex Method - Minimization Problem and Mixed Constraints}
+
+One technique to solve a minimization problem with mixed constraints is to convert the problem into a maximization problem with mixed constraints by multiplying each coefficient of the objective function by -1.
+
+\begin{problem}{Outcome a}{5}
+    Find the minimum value of the function: $w = 4x_1 + 2x_2 + x_3$ \newline\newline
+    Subject to constraints:
+    \begin{itemize}
+        \item $2x_1 + 3x_2 + 4x_3 \leq 14$
+        \item $3x_1 + x_2  + 5x_3\geq 4$
+        \item $x_1 + 4x_2  + 3x_3\geq 6$
+    \end{itemize}
+    Where $x_1 \geq 0$, $x_2 \geq 0$, $x_3 \geq 0$
+
+    \begin{center}
+        \includegraphics[width=0.9\linewidth]{problem3/problem3}%
+    \end{center}
+
+\end{problem}
+
+\section{Simplex Method - Mining Company}
+
+\begin{problem}{Outcome a, b}{6}
+    A mining Company has 2 locations in different parts of the country where gold, silver and bronze are extracted. Location 1 costs S/. 20,000 per day to operate and Location 2 costs S/. 25,000 per day to operate. In the table below you will find the amount of minerals that are extracted by each location per day.
+
+
+    \begin{center}
+        \begin{tabular}{ c|c|c } 
+            \textbf{Mineral}  & \textbf{Location 1} & \textbf{Location 2} \\ \midrule  
+            Bronze  & 400kg & 300kg \\
+            Silver  & 300kg & 400kg \\ 
+            Gold    & 200kg & 500kg \\ 
+        \end{tabular}
+        \newline
+    \end{center}
+
+    The company has the goal of at least extract 25,000 kg of bronze, 27,000 kg of silver and 30,000 kg of gold. How many days each location should run to minimize its costs and fulfill its goal?
+
+    \begin{center}
+        \includegraphics[width=0.9\linewidth]{problem4/problem4}%
+    \end{center}
+
+\end{problem}
+
+\end{document}
+
+
+
